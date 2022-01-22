@@ -1,0 +1,10 @@
+@media (min-width: 32.5em){
+    .bioimage{
+        float:right;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
