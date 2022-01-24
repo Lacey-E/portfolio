@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="css/notes-styles.css" />
     <link rel="stylesheet" href="css/medium.css" />
 </head>
+
 <body>
     <div class="content">
-        
+
         <header>
             <h2>
                 Week 3 Notes
@@ -18,116 +20,128 @@
         </header>
 
 
-<p>
-Object are used in the real world to represent entities. OOP means Object oriented programming. <br>
-<br>
-To create an object literal, simply enter a pair of curly braces.
- The following example creates an empty object that is assigned to the variable spiderman: <br>
-<br>
-&emsp;const spiderman = {}; <br>
-<br>
-You can access the properties of an object using the dot notation <br>
- <br>
+        <p>
+            Object are used in the real world to represent entities. OOP means Object oriented programming. <br>
+            <br>
+            To create an object literal, simply enter a pair of curly braces.
+            The following example creates an empty object that is assigned to the variable spiderman: <br>
+            <br>
+            &emsp;const spiderman = {}; <br>
+            <br>
+            You can access the properties of an object using the dot notation <br>
+            <br>
 
-&emsp;superman.name <br>
-&emsp;'Superman'<br>
- <br>
- <b>OR use the brackets</b> <br>
-<br>
-&emsp;superman["real" + " " + "name"]  <em>// the property is built using string concatenation</em> <br>
-&emsp; "Clark Kent" <br>
-<br>
-</p>
-
-
-<h3>
-    This In Js:
-</h3>
-<p>
-    To access the object, a method can use the this keyword.
-
-    The value of this is the object “before dot”, the one used to call the method.
-<br>
-This when called in the instance of an object, then this becomes the instance <br>
-
-<br>
-&emsp; function Human (age) { <br>
-    &emsp;   this.age = age <br>
-    &emsp; } <br>
-   <br>
-  &emsp;let greg = new Human(22) <br>
-  &emsp;let thomas = new Human(24) <br>
-  
-  &emsp;console.log(greg) // this.age = 22 <br>
-  &emsp;console.log(thomas) // this.age = 24 <br>
-</p>
+            &emsp;superman.name <br>
+            &emsp;'Superman'<br>
+            <br>
+            <b>OR use the brackets</b> <br>
+            <br>
+            &emsp;superman["real" + " " + "name"] <em>// the property is built using string concatenation</em> <br>
+            &emsp; "Clark Kent" <br>
+            <br>
+        </p>
 
 
+        <h3>
+            This In Js:
+        </h3>
+        <p>
+            To access the object, a method can use the this keyword.
 
-<h3>
-    Summary:
-</h3>
-<p>
-    *Copied from the Notes  <br>
-    <ul>
-   <li>Functions that are stored in object properties are called “methods”.</li> 
-    <li> Methods allow objects to “act” like object.doSomething().</li>
-    <li>Methods can reference the object as this.</li>
-    <li>The value of this is defined at run-time.</li>
+            The value of this is the object “before dot”, the one used to call the method.
+            <br>
+            This when called in the instance of an object, then this becomes the instance <br>
 
-    <li>When a function is declared, it may use this, but that this has no value until the function is called.</li>
-    <li>A function can be copied between objects.
-        <li>When a function is called in the “method” syntax: object.method(), the value of this during the call is object.</li>
-        <li>Please note that arrow functions are special: they have no this. When this is accessed inside an arrow function, it is taken from outside.</li>
+            <br>
+            &emsp; function Human (age) { <br>
+            &emsp; this.age = age <br>
+            &emsp; } <br>
+            <br>
+            &emsp;let greg = new Human(22) <br>
+            &emsp;let thomas = new Human(24) <br>
 
-    </ul>
-    </p>
+            &emsp;console.log(greg) // this.age = 22 <br>
+            &emsp;console.log(thomas) // this.age = 24 <br>
+        </p>
 
 
-<h3>
-    Document Object Module{DOM}: 
-</h3>
-<p>
-    &emsp; To my understanding the DOM connects HTML and JS. It allows everything
-     within a webpage to treated as nodes including html tags and atributes. <br>
-    
-    <br> <em>The DOM is not actually part of JavaScript because it is language agnostic</em> <br>
-    but it is the most associated and used language with it.  
-</p>
 
-<h3>Events Listners</h3>
-<p>
-    Basically events listners, listens for when events actually happen. 
-</p>
+        <h3>
+            Summary:
+        </h3>
+        <p>
+            *Copied from the Notes <br>
+            <ul>
+                <li>Functions that are stored in object properties are called “methods”.</li>
+                <li> Methods allow objects to “act” like object.doSomething().</li>
+                <li>Methods can reference the object as this.</li>
+                <li>The value of this is defined at run-time.</li>
 
-<nav>
-<ul>
-    <li>
-<a href="./week3-examples/events.html">Link to eventslistner in action</a></li>
-</ul>
-</nav>
+                <li>When a function is declared, it may use this, but that this has no value until the function is
+                    called.</li>
+                <li>A function can be copied between objects.
+                <li>When a function is called in the “method” syntax: object.method(), the value of this during the call
+                    is object.</li>
+                <li>Please note that arrow functions are special: they have no this. When this is accessed inside an
+                    arrow function, it is taken from outside.</li>
 
-<br>
- <br>
-<hr>
-<br>
-    <footer>
-        &copy;<span id="year"></span> | Esther Ezimadu | WDD 330 | Last
-        Modified: | <span id="time"></span>
-      </footer>
+            </ul>
+        </p>
+
+
+        <h3>
+            Document Object Module{DOM}:
+        </h3>
+        <p>
+            &emsp; To my understanding the DOM connects HTML and JS. It allows everything
+            within a webpage to treated as nodes including html tags and atributes. <br>
+
+            <br> <em>The DOM is not actually part of JavaScript because it is language agnostic</em> <br>
+            but it is the most associated and used language with it.
+        </p>
+
+        <h3>Events Listners</h3>
+        <p>
+            Basically events listners, listens for when events actually happen.
+        </p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./week3-examples/events.html">Link to eventslistner in action</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="./week3-examples/quiz.html">Link to eventslistner in action</a></li>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <footer>
+            &copy;<span id="year"></span> | Esther Ezimadu | WDD 330 | Last
+            Modified: | <span id="time"></span>
+        </footer>
     </div>
-    
+
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-    WebFont.load({
-      google: {
-        families: [
-        'Roboto'] }});
-  </script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
 
-    
 
-</div>
+
+    </div>
 </body>
+
 </html>
