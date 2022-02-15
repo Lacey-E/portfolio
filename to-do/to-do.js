@@ -42,7 +42,11 @@ const listBtn = document.createElement('button');
       };
     input.focus();
 
-   
+ // Store
+localStorage.task(listItem);
+
+// Retrieve
+document.listText.innerHTML = localStorage.task(listItem);  
     
 
 }
