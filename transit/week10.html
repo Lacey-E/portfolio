@@ -25,24 +25,31 @@
             Fetch Api 
         </h2>
         <p>
-
+            Uploading multiple files
+            Files can be uploaded using an HTML <input type="file" multiple /> input element, FormData() and fetch().
             </p>
            
-            &emsp;const spiderman = {}; <br>
             <br>
-            You can access the properties of an object using the dot notation <br>
+            <br>
+<p>
+    The Headers interface allows you to create your own headers object via the Headers() constructor. 
+    A headers object is a simple multi-map of names to values:
+<br>
+<br>
+    &emsp;const content = 'Hello World';
+    &emsp;const myHeaders = new Headers();
+    &emsp;myHeaders.append('Content-Type', 'text/plain');
+    &emsp;myHeaders.append('Content-Length', content.length.toString());
+    &emsp;myHeaders.append('X-Custom-Header', 'ProcessThisImmediately');
+</p>
+            <br>
             <br>
 
-            &emsp;superman.name <br>
-            &emsp;'Superman'<br>
-            <br>
-            <b>OR use the brackets</b> <br>
-            <br>
-            &emsp;superman["real" + " " + "name"] <em>// the property is built using string concatenation</em> <br>
-            &emsp; "Clark Kent" <br>
-            <br>
-        </p>
-
+           
+      <p>
+        headers' objects have a guard property. 
+        This is not exposed to the Web, but it affects which mutation operations are allowed on the headers object.
+      </p>
 
         <h2>Form Validation and No-Validation</h2>
         <p>Forms can have pattern or requirement before they are submitted. There are simple html tags that can help 
