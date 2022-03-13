@@ -50,7 +50,7 @@ addEvent(email, "input", function () {
   const test = email.value.length === 0 || emailRegExp.test(email.value);
   if (test) {
     email.className = "valid";
-    error.textContent = "";
+    error.textContent = "ok";
     error.className = "error";
   } else {
     email.className = "invalid";
@@ -63,14 +63,14 @@ addEvent(form, "submit", function () {
 
   if (!test) {
     email.className = "invalid";
-    error.textContent = "I expect an e-mail, darling!";
+    error.textContent = "You need to submit something valid";
     error.className = "error active";
 
     // Some legacy browsers do not support the event.preventDefault() method
     return false;
   } else {
     email.className = "valid";
-    error.textContent = "";
+    error.textContent = "fair";
     error.className = "error";
   }
 });
