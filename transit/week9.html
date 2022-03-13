@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 | Notes</title>
+    <link rel="stylesheet" href="css/notes-styles.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/transition.css">
+  
+</head>
+
+<body>
+    <div class="content">
+
+        <header>
+            <h2>
+                Week 10 Notes
+            </h2>
+        </header>
+
+        <h2>
+          Window Object  
+        </h2>
+        <p>
+            The window.location property is an object that contains information about the URL of the current page. 
+            It contains a number of properties that provide information about different fragments of the URL.
+            </p>
+           <br>
+           <p>
+            &emsp;window.alert('Hello');
+            << undefined <br>
+            <br>
+            The window.location object also has the following methods:
+
+The reload() method can be used to force a reload of the current page. If it’s given a parameter of true, it will force the browser to reload the page from the server, instead of using a cached page.
+
+The assign() method can be used to load another resource from a URL provided as a parameter, for example:
+           </p>
+           
+          <h2>
+              HTML 5 Api
+          </h2>
+          <p>
+            The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser. They’re also private to a page, so are not intended to be used by an external service – their sole purpose is to be used by a JavaScript program. This means they’re perfect for adding data that can be used as a hook that the program utilizes to access information about a particular element on the page.
+
+            The names of these attributes can be decided by the developer, but they must use the following format:
+            
+            Start with data-.
+            
+            Contain only lowercase letters, numbers, hyphens, dots, colons or underscores.
+            
+            Include an optional string value.
+          </p>
+
+            <br>
+            <p>
+                HTML5 Web Storage
+The Web Storage API provides a key-value store on the client’s computer that is similar to using cookies 
+but has fewer restrictions, more storage capacity, and is generally easier to use. This makes it perfect for storing information about users,
+ as well as storing application-specific information that can then be used during future sessions.
+            </p>
+
+           <br>
+
+           <p>
+            localStorage.setItem('name', 'Walter White');
+           </p>
+
+
+           <button id='rainbow'>Change Color</button>
+    <form>
+        <label for='number'>Enter a Number to Factorize:</label>
+        <input id='number' type='number' name='number' min=1 value='20'>
+        <button type='submit'>Submit</button>
+    </form>
+    <div id='output'></div>
+            <br>
+
+        
+
+
+
+
+
+
+
+       
+        <br>
+        <footer>
+            &copy;<span id="year"></span> | Esther Ezimadu | WDD 330 | Last
+            Modified: | <span id="time"></span>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
+
+
+
+    </div>
+</body>
+
+</html>
